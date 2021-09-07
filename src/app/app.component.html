@@ -1,9 +1,10 @@
 <!-- 
   TABS  
+      padding: 15px 40px;
 -->
-<mat-tab-group animationDuration="0ms">
+<mat-tab-group animationDuration="0ms" class="elwood-tab-group">
 
-  <mat-tab label="Name Editor">
+  <mat-tab label="Name Editor" class="elwood-mat-tab">
     <ng-template matTabContent>
 
       <h2 class="elwood-h2">Name Editor <small>Enter your name into the form field below</small></h2>
@@ -14,7 +15,7 @@
     </ng-template>
   </mat-tab>
 
-  <mat-tab label="Profile Editor">
+  <mat-tab label="Profile Editor" class="elwood-mat-tab">
     <ng-template matTabContent>
 
       <h2 class="elwood-h2">Profile Editor <small>Manage multiple form control instances in a single group</small></h2>
@@ -24,9 +25,16 @@
     </ng-template>
   </mat-tab>
 
-  <mat-tab label="Third">
+  <mat-tab label="Nested Profile Editor" class="elwood-mat-tab">
     <ng-template matTabContent>
-      Content 3 - Loaded: {{getTimeLoaded(3) | date:'medium'}}
+
+      <h2 class="elwood-h2">
+        Nested Profile Editor
+        <small>Manage multiple form control instances in a single group</small>
+      </h2>
+      <app-nested-editor></app-nested-editor>
+      <footer class="elwood-footer">{{getTimeLoaded(3) | date:'medium'}}</footer>
+
     </ng-template>
   </mat-tab>
 

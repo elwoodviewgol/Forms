@@ -13,6 +13,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppComponent } from './app.component';
 import { NameEditorComponent } from './components/name-editor/name-editor.component';
 import { ProfileEditorComponent } from './components/profile-editor/profile-editor.component';
+import { NestedEditorComponent } from './components/nested-editor/nested-editor.component';
 
 @NgModule({
   imports: [
@@ -25,7 +26,12 @@ import { ProfileEditorComponent } from './components/profile-editor/profile-edit
     MaterialModule,
     FlexLayoutModule
   ],
-  declarations: [AppComponent, NameEditorComponent, ProfileEditorComponent],
+  declarations: [
+    AppComponent,
+    NameEditorComponent,
+    ProfileEditorComponent,
+    NestedEditorComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
