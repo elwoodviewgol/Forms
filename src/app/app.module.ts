@@ -3,7 +3,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //
@@ -12,6 +11,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 //
 import { AppComponent } from './app.component';
+import { NameEditorComponent } from './components/name-editor/name-editor.component';
 
 @NgModule({
   imports: [
@@ -24,7 +24,7 @@ import { AppComponent } from './app.component';
     MaterialModule,
     FlexLayoutModule
   ],
-  declarations: [AppComponent],
+  declarations: [AppComponent, NameEditorComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

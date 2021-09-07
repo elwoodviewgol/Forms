@@ -1,18 +1,17 @@
-
-
-
-
 <!-- 
   TABS  
 -->
-<mat-tab-group>
+<mat-tab-group animationDuration="0ms">
 
   <mat-tab label="First">
     <ng-template matTabContent>
-      Content 1 - Loaded: {{getTimeLoaded(1) | date:'medium'}}
+
+      <app-name-editor></app-name-editor>
+      <footer>{{getTimeLoaded(1) | date:'medium'}}</footer>
+
     </ng-template>
   </mat-tab>
-  
+
   <mat-tab label="Second">
     <ng-template matTabContent>
       Content 2 - Loaded: {{getTimeLoaded(2) | date:'medium'}}
@@ -24,5 +23,5 @@
       Content 3 - Loaded: {{getTimeLoaded(3) | date:'medium'}}
     </ng-template>
   </mat-tab>
-  
+
 </mat-tab-group>
