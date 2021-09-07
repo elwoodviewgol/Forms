@@ -1,1 +1,16 @@
+/*
+FOOTER 
+--------------------------------------- */
+.elwood-footer {
+  border-top: 1px solid #ccc;
+  color: rgb(0 0 0 / 50%);
+  font-size: 11px;
+  padding-top: 15px;
+  margin-top: 100px;
+}
+
+.elwood-form-field {
+  width: 100%;
+}
+
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';

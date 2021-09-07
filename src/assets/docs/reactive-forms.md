@@ -3,6 +3,11 @@
 [Source](https://angular.io/guide/reactive-forms)  
 [Live Example](https://stackblitz.com/angular/qrkmnxoqqoo?file=src%2Fapp%2Fapp.component.ts)  
   
+## Quick Links  
+  
+1. Classes and Directives provided by ReactiveFormsModule, see the [Reactive forms API](https://angular.io/guide/reactive-forms#reactive-forms-api) section.   
+1. For complete syntax details of these classes and directives, see the API reference documentation for the [Forms package](https://angular.io/api/forms).  
+
 ---  
   
 Overview of reactive forms

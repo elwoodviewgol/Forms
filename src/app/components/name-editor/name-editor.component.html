@@ -1,3 +1,9 @@
-<p>
-name-editor works!
-</p>
+<div fxLayout="row" fxLayoutGap="15px">
+  <div fxFlex="50%">
+    <mat-form-field class="elwood-form-field" appearance="fill">
+      <mat-label>Name</mat-label>
+      <input matInput placeholder="Ex. Peter" value="George" [formControl]="name">
+    </mat-form-field>
+  </div>
+  <div fxFlex="50%">Right</div>
+</div>
