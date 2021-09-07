@@ -14,9 +14,13 @@
     </ng-template>
   </mat-tab>
 
-  <mat-tab label="Second">
+  <mat-tab label="Profile Editor">
     <ng-template matTabContent>
-      Content 2 - Loaded: {{getTimeLoaded(2) | date:'medium'}}
+
+      <h2 class="elwood-h2">Profile Editor <small>Manage multiple form control instances in a single group</small></h2>
+      <app-profile-editor></app-profile-editor>
+      <footer class="elwood-footer">{{getTimeLoaded(2) | date:'medium'}}</footer>
+
     </ng-template>
   </mat-tab>
 

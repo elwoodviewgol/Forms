@@ -12,6 +12,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 //
 import { AppComponent } from './app.component';
 import { NameEditorComponent } from './components/name-editor/name-editor.component';
+import { ProfileEditorComponent } from './components/profile-editor/profile-editor.component';
 
 @NgModule({
   imports: [
@@ -24,7 +25,7 @@ import { NameEditorComponent } from './components/name-editor/name-editor.compon
     MaterialModule,
     FlexLayoutModule
   ],
-  declarations: [AppComponent, NameEditorComponent],
+  declarations: [AppComponent, NameEditorComponent, ProfileEditorComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

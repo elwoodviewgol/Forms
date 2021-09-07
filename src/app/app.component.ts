@@ -10,7 +10,7 @@ export class AppComponent {
 
   //
   public getTimeLoaded(index: number) {
-    console.log('getTimeLoaded()', index);
+    // console.log('getTimeLoaded()', index);
 
     if (!this.tabLoadTimes[index]) {
       this.tabLoadTimes[index] = new Date();
