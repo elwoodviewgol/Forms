@@ -7,6 +7,7 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./name-editor.component.scss']
 })
 export class NameEditorComponent implements OnInit {
+  public panelOpenState = false;
   public name = new FormControl('');
 
   constructor() {}

@@ -10,9 +10,9 @@
 
 ---  
   
-Overview of reactive forms
-Adding a basic form control
-Displaying a form control value
+[Overview of reactive forms](#)
+[Adding a basic form control](#)
+[Displaying a form control value](#)
 Replacing a form control value
 Grouping form controls
 Creating nested form groups
@@ -51,3 +51,11 @@ import { ReactiveFormsModule } from '@angular/forms';
 })
 export class AppModule { }
 ```  
+
+## Displaying a form control value 
+
+Reactive forms provide access to information about a given control through properties and methods provided with each instance. These properties and methods of the underlying [AbstractControl](https://angular.io/api/forms/AbstractControl) class are used to control form state and determine when to display messages when handling [input validation](https://angular.io/guide/reactive-forms#basic-form-validation).
+
+Read about other FormControl properties and methods in the API Reference.  
+
+## Replacing a form control value

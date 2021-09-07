@@ -4,6 +4,34 @@
       <mat-label>Name</mat-label>
       <input matInput placeholder="Ex. Peter" value="George" [formControl]="name">
     </mat-form-field>
+
+
+    <mat-accordion>
+
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+
+        <mat-expansion-panel-header>
+          <mat-panel-title>Replacing a form control value</mat-panel-title>
+          <mat-panel-description>
+            <!-- This is a summary of the content -->
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <button (click)="updateName()">Update Name</button>
+        <p>This is the primary content of the panel.</p>
+
+      </mat-expansion-panel>
+
+    </mat-accordion>
+
   </div>
-  <div fxFlex="50%">Right</div>
+  <div fxFlex="50%" fxLayout="column" fxLayoutGap="15px">
+    <div>
+      <h3>Observable: valueChanges</h3>
+    </div>
+    <div>
+      <h3>Property: value</h3>
+      <p class="elwood-value-display-alpha">{{ name.value }}</p>
+    </div>
+  </div>
 </div>

@@ -3,10 +3,11 @@
 -->
 <mat-tab-group animationDuration="0ms">
 
-  <mat-tab label="First">
+  <mat-tab label="Name Editor">
     <ng-template matTabContent>
 
-      <h2>Name Editor</h2>
+      <h2 class="elwood-h2">Name Editor <small>Enter your name into the form field below</small></h2>
+
       <app-name-editor></app-name-editor>
       <footer class="elwood-footer">{{getTimeLoaded(1) | date:'medium'}}</footer>
 

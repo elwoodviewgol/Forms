@@ -1,4 +1,22 @@
 /*
+TEXT 
+--------------------------------------- */
+.elwood-h2 {
+  color: #ddd;
+  font-weight: 100;
+}
+.elwood-h2 small {
+  color: #9b9b9b;
+  display: block;
+  font-size: 14px;
+}
+.elwood-value-display-alpha {
+  background-color: rgb(0 190 255 / 25%);
+  font-family: 'Lekton', sans-serif;
+  padding: 15px;
+}
+
+/*
 FOOTER 
 --------------------------------------- */
 .elwood-footer {
@@ -9,6 +27,9 @@ FOOTER
   margin-top: 100px;
 }
 
+/*
+FORMS 
+--------------------------------------- */
 .elwood-form-field {
   width: 100%;
 }
