@@ -12,4 +12,10 @@ A deep dive into Anuglar Forms.
 1. [API | @angular/forms](https://angular.io/api/forms)  
 1. [Introduction to forms in Angular](https://angular.io/guide/forms-overview)  
 1. [Building a template-driven form](https://angular.io/guide/forms)  
-1. [Using forms for user input](https://angular.io/start/start-forms)
+1. [Using forms for user input](https://angular.io/start/start-forms)  
+  
+### Blogs  
+  
+#### RxJs  
+1. [Deep Dive into Reactive Programming with RxJS](https://www.infoq.com/articles/reactive-programming-rxjs/)  
+1. [Reactive Programming 🌫️ - Demystified using RxJS](https://dev.to/gitpaulo/reactive-programming-demystified-using-rxjs-53g5)
