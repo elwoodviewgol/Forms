@@ -14,6 +14,7 @@ import { AppComponent } from './app.component';
 import { NameEditorComponent } from './components/name-editor/name-editor.component';
 import { ProfileEditorComponent } from './components/profile-editor/profile-editor.component';
 import { NestedEditorComponent } from './components/nested-editor/nested-editor.component';
+import { AdvancedFormEditorComponent } from './components/advanced-form-editor/advanced-form-editor.component';
 
 @NgModule({
   imports: [
@@ -30,7 +31,8 @@ import { NestedEditorComponent } from './components/nested-editor/nested-editor.
     AppComponent,
     NameEditorComponent,
     ProfileEditorComponent,
-    NestedEditorComponent
+    NestedEditorComponent,
+    AdvancedFormEditorComponent
   ],
   bootstrap: [AppComponent]
 })

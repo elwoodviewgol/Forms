@@ -40,6 +40,16 @@ FOOTER
   margin-top: 100px;
 }
 
+.elwood-section {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 30px 15px;
+}
+.elwood-section label {
+  color: rgb(42, 21, 61);
+  display: block;
+  font-weight: 700;
+}
+
 /*
 FORMS 
 --------------------------------------- */
@@ -59,6 +69,42 @@ TABS
 .mat-tab-body-wrapper {
   background-color: transparent; /* rgba(0, 255, 255, 0.25) */
   padding: 15px 40px;
+}
+
+/*
+PROFILE COMPONENT
+--------------------------------------- */
+.elwood-header {
+  background-color: rgb(0, 162, 255);
+  color: #fff;
+  padding: 30px 15px;
+  text-align: center;
+}
+.elwood-profile-name {
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+.elwood-profile-quote {
+  font-size: 14px;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+.elwood-profile-img {
+  background-color: aqua;
+  border-radius: 100px;
+  width: 175px;
+  overflow: hidden;
+  text-align: center;
+  height: 175px;
+  margin: 0 auto 15px;
+  border: 1px solid #ffffff;
+}
+.elwood-profile-img img {
+  height: 200px;
+  display: block;
+  margin-left: -100px;
 }
 
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';

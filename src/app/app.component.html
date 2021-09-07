@@ -38,4 +38,17 @@
     </ng-template>
   </mat-tab>
 
+  <mat-tab label="Advanced Editor" class="elwood-mat-tab">
+    <ng-template matTabContent>
+
+      <h2 class="elwood-h2">
+        Advanced Editor
+        <small>Update Your Profile.</small>
+      </h2>
+      <app-advanced-form-editor></app-advanced-form-editor>
+      <footer class="elwood-footer">{{getTimeLoaded(3) | date:'medium'}}</footer>
+
+    </ng-template>
+  </mat-tab>
+
 </mat-tab-group>
