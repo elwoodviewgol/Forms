@@ -18,11 +18,15 @@ export class NestedEditorComponent implements OnInit {
     })
   });
 
+  public valueDisplay: string = '';
+
   constructor() {}
 
   ngOnInit() {}
 
   public onSubmit() {
+    // SHOW THE VALUES
+    this.valueDisplay = this.nestedProfileForm.value;
     // TODO: Use EventEmitter with form value
     console.warn('onSubmit()', this.nestedProfileForm.value);
   }
