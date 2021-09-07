@@ -1,43 +1,28 @@
-<div id="demo-container" fxLayout="columns" fxLayoutGap="15px">
-  <div id="demo-column-alpha" fxFlex="30%"><!-- ALPHA --></div>
-  <div id="demo-column-bravo" fxFlex="40%">
-    <!-- FORM -->
-    <mat-card>
-      <div
-        fxLayout="columns"
-        fxLayoutGap="20px"
-        style="background-color: aqua;"
-      >
-        <div>
-          Field 1
-          <!-- <mat-form-field appearance="fill">
-            <mat-label>Input</mat-label>
-            <input matInput />
-          </mat-form-field> -->
-        </div>
 
-        <div>
-          Field 2
-          <!-- <mat-form-field appearance="fill">
-            <mat-label>Select</mat-label>
-            <mat-select>
-              <mat-option value="one">First option</mat-option>
-              <mat-option value="two">Second option</mat-option>
-            </mat-select>
-          </mat-form-field> -->
-        </div>
 
-        <div>
-          Field 3
-          <!-- <mat-form-field appearance="fill">
-            <mat-label>Textarea</mat-label>
-            <textarea matInput></textarea>
-          </mat-form-field>
-        </div> -->
-        </div>
-      </div>
-      <button mat-flat-button color="primary">Primary</button>
-    </mat-card>
-  </div>
-  <div id="demo-column-charlie" fxFlex="30%"><!-- BRAVO --></div>
-</div>
+
+
+<!-- 
+  TABS  
+-->
+<mat-tab-group>
+
+  <mat-tab label="First">
+    <ng-template matTabContent>
+      Content 1 - Loaded: {{getTimeLoaded(1) | date:'medium'}}
+    </ng-template>
+  </mat-tab>
+  
+  <mat-tab label="Second">
+    <ng-template matTabContent>
+      Content 2 - Loaded: {{getTimeLoaded(2) | date:'medium'}}
+    </ng-template>
+  </mat-tab>
+
+  <mat-tab label="Third">
+    <ng-template matTabContent>
+      Content 3 - Loaded: {{getTimeLoaded(3) | date:'medium'}}
+    </ng-template>
+  </mat-tab>
+  
+</mat-tab-group>
