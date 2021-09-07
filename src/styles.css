@@ -4,7 +4,7 @@ TEXT
 .elwood-h2,
 .elwood-h3,
 .elwood-h4 {
-  color: #ddd;
+  color: rgb(143, 0, 209);
   font-weight: 100;
 }
 .elwood-h2 small,
@@ -42,13 +42,13 @@ FORMS
 TABS
 --------------------------------------- */
 .elwood-tab-group {
-  background-color: rgba(0, 255, 255, 0.25);
+  background-color: transparent ; /* rgba(0, 255, 255, 0.25) */
 }
 .mat-tab-header {
-  background-color: rgba(0, 89, 255, 0.25);
+  background-color: transparent ; /* rgba(0, 255, 255, 0.25) */
 }
 .mat-tab-body-wrapper {
-  background-color: rgba(255, 0, 179, 0.25);
+  background-color: transparent ; /* rgba(0, 255, 255, 0.25) */
   padding: 15px 40px;
 }
 
