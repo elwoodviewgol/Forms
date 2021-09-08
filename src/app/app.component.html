@@ -51,4 +51,17 @@
     </ng-template>
   </mat-tab>
 
+  <mat-tab label="Form Builder" class="elwood-mat-tab">
+    <ng-template matTabContent>
+
+      <h2 class="elwood-h2">
+        Form Builder
+        <small>Using the FormBuilder service to generate controls.</small>
+      </h2>
+      <app-more-advanced-editor></app-more-advanced-editor>
+      <footer class="elwood-footer">{{getTimeLoaded(3) | date:'medium'}}</footer>
+
+    </ng-template>
+  </mat-tab>
+
 </mat-tab-group>

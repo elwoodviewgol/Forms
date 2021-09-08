@@ -7,14 +7,14 @@
       <div class="elwood-profile-img">
         <img src="https://www.vibe.com/wp-content/uploads/2016/09/2Pac3-2-1592330263.jpg" alt="Profile Image">
       </div>
-      <h2 class="elwood-profile-name">Brad Pitt</h2>
+      <h2 class="elwood-profile-name">{{valueDisplay.firstName}} {{valueDisplay.lastName}}</h2>
       <h3 class="elwood-profile-quote">My only fear of death is coming back reincarnated.</h3>
     </header>
 
     <section class="elwood-section" fxLayout="row">
       <div fxFlex="90%">
         <label for="" class="elwood-label">Address (Primary)</label>
-        1000 N. Roxbury Dr, <br>Beverly Hills, CA 90210
+        {{valueDisplay.address.street}}, <br>{{valueDisplay.address.city}}, {{valueDisplay.address.state}} {{valueDisplay.address.zip}}
       </div>
       <div fxFlex="10%">
         <mat-icon aria-hidden="false" aria-label="n">place</mat-icon>

@@ -7,7 +7,16 @@ import { FormGroup, FormControl } from '@angular/forms';
   styleUrls: ['./advanced-form-editor.component.css']
 })
 export class AdvancedFormEditorComponent implements OnInit {
-  public valueDisplay: string = '';
+  public valueDisplay = {
+    firstName: 'Bradley',
+    lastName: 'Cooper',
+    address: {
+      street: '3033 Compton Blvd.',
+      city: 'Beverly Hills',
+      state: 'CA',
+      zip: '90210'
+    }
+  };
 
   public nestedProfileForm = new FormGroup({
     firstName: new FormControl(''),
@@ -24,23 +33,23 @@ export class AdvancedFormEditorComponent implements OnInit {
 
   ngOnInit() {}
 
-  public onSubmit() {
-    // SHOW THE VALUES
-    this.valueDisplay = this.nestedProfileForm.value;
-    console.warn('onSubmit()', this.nestedProfileForm.value);
-  }
-
-  //
   //
   public updateProfile() {
     console.log('updateProfile()', 'I am inside of Update Procedural');
+    console.log('updateProfile()', this.nestedProfileForm.value);
 
+    // UPDATE OBJECT
     this.nestedProfileForm.patchValue({
       firstName: 'Nancy',
       address: {
         street: '123 Drew Street'
       }
     });
+
+    // UPDATE VALUE
+    this.valueDisplay = this.nestedProfileForm.value;
+
+    console.log('updateProfile() after', this.nestedProfileForm.value);
   }
 
   //
