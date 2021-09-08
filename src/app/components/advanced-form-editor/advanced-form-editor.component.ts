@@ -7,29 +7,22 @@ import { FormGroup, FormControl } from '@angular/forms';
   styleUrls: ['./advanced-form-editor.component.css']
 })
 export class AdvancedFormEditorComponent implements OnInit {
-  public valueDisplay = {
-    firstName: 'Bradley',
-    lastName: 'Cooper',
-    address: {
-      street: '3033 Compton Blvd.',
-      city: 'Beverly Hills',
-      state: 'CA',
-      zip: '90210'
-    }
-  };
+  public valueDisplay: any;
 
   public nestedProfileForm = new FormGroup({
-    firstName: new FormControl(''),
-    lastName: new FormControl(''),
+    firstName: new FormControl('Bradley'),
+    lastName: new FormControl('Cooper'),
     address: new FormGroup({
-      street: new FormControl(''),
-      city: new FormControl(''),
-      state: new FormControl(''),
-      zip: new FormControl('')
+      street: new FormControl('3033 Compton Blvd.'),
+      city: new FormControl('Beverly Hills'),
+      state: new FormControl('CA'),
+      zip: new FormControl('90210')
     })
   });
 
-  constructor() {}
+  constructor() {
+    this.valueDisplay = this.nestedProfileForm.value;
+  }
 
   ngOnInit() {}
 
@@ -40,7 +33,8 @@ export class AdvancedFormEditorComponent implements OnInit {
 
     // UPDATE OBJECT
     this.nestedProfileForm.patchValue({
-      firstName: 'Nancy',
+      firstName: 'Tupac Amaru',
+      lastName: 'Shakur',
       address: {
         street: '123 Drew Street'
       }
@@ -51,7 +45,4 @@ export class AdvancedFormEditorComponent implements OnInit {
 
     console.log('updateProfile() after', this.nestedProfileForm.value);
   }
-
-  //
-  //
 }

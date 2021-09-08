@@ -1,0 +1,34 @@
+<div fxLayout="row" fxLayoutGap="15px">
+
+
+  <div id="left-column-demo" fxFlex="40%">
+
+    <header class="elwood-header">
+      <div class="elwood-profile-img">
+        <img src="https://theundefeated.com/wp-content/uploads/2021/02/Malcolm-X-e1613659302375.jpg" alt="Profile Image">
+      </div>
+      <h2 class="elwood-profile-name">{{valueDisplay.firstName}} {{valueDisplay.lastName}}</h2>
+      <h3 class="elwood-profile-quote">My only fear of death is coming back reincarnated.</h3>
+    </header>
+
+    <section class="elwood-section" fxLayout="row">
+      <div fxFlex="90%">
+        <label for="" class="elwood-label">Address (Primary)</label>
+        {{valueDisplay.address.street}}, <br>{{valueDisplay.address.city}}, {{valueDisplay.address.state}} {{valueDisplay.address.zip}}
+      </div>
+      <div fxFlex="10%">
+        <mat-icon aria-hidden="false" aria-label="n">place</mat-icon>
+      </div>
+    </section>
+
+  </div>
+
+  <mat-divider [vertical]="true"></mat-divider>
+
+  <div id="right-column-demo" fxFlex="60%" fxLayout="column" fxLayoutGap="15px">
+
+    <button mat-stroked-button (click)="updateProfile()">Update Your Profile</button>
+    <div *ngIf="valueDisplay" class="elwood-value-display">{{valueDisplay | json}}</div>
+
+  </div>
+</div>
