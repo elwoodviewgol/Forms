@@ -1,0 +1,135 @@
+<div fxLayout="row" fxLayoutGap="15px">
+  <div id="left-column-demo" fxFlex="65%">
+    <form [formGroup]="validatedForm" (ngSubmit)="onSubmit()">
+      <mat-form-field class="elwood-form-field" appearance="fill">
+        <mat-label>First Name</mat-label>
+        <input
+          id="first-name"
+          type="text"
+          formControlName="firstName"
+          matInput
+          placeholder="Ex. John"
+        />
+      </mat-form-field>
+
+      <mat-form-field class="elwood-form-field" appearance="fill">
+        <mat-label>Last Name</mat-label>
+        <input
+          id="last-name"
+          type="text"
+          formControlName="lastName"
+          matInput
+          placeholder="Ex. Doe"
+          required
+        />
+      </mat-form-field>
+
+      <!-- NESTED: Address -->
+      <div formGroupName="address">
+        <h4 class="elwood-h4">Address</h4>
+
+        <mat-form-field class="elwood-form-field" appearance="fill">
+          <mat-label>Street</mat-label>
+          <input
+            id="street"
+            type="text"
+            formControlName="street"
+            matInput
+            placeholder="Ex. John"
+            required
+          />
+        </mat-form-field>
+
+        <!-- 3 COLUMNS -->
+        <div fxLayout="row">
+          <mat-form-field class="elwood-form-field" appearance="fill">
+            <mat-label>City</mat-label>
+            <input
+              id="city"
+              type="text"
+              formControlName="city"
+              matInput
+              placeholder="Ex. Somewhere Far Away"
+              required
+            />
+          </mat-form-field>
+
+          <mat-form-field class="elwood-form-field" appearance="fill">
+            <mat-label>State</mat-label>
+            <input
+              id="state"
+              type="text"
+              formControlName="state"
+              matInput
+              placeholder="Ex. Texas"
+              required
+            />
+          </mat-form-field>
+
+          <mat-form-field class="elwood-form-field" appearance="fill">
+            <mat-label>Zip Code</mat-label>
+            <input
+              id="zip"
+              type="text"
+              formControlName="zip"
+              matInput
+              placeholder="Ex. 00000"
+              required
+            />
+          </mat-form-field>
+        </div>
+      </div>
+      <!-- [end] nested.address -->
+
+      <p>Complete the form to enable button.</p>
+      <button
+        mat-stroked-button
+        type="submit"
+        [disabled]="!validatedForm.valid"
+        class="elwood-form-field"
+      >
+        Submit
+      </button>
+
+      <div>{{ validatedForm.status }}</div>
+    </form>
+  </div>
+
+  <mat-divider [vertical]="true"></mat-divider>
+
+  <div id="right-column-demo" fxFlex="35%" fxLayout="column" fxLayoutGap="15px">
+    <!-- <button mat-stroked-button (click)="updateProfile()">
+      Update Your Profile
+    </button> -->
+
+    <header class="elwood-header">
+      <div class="elwood-profile-img">
+        <img
+          src="https://crackmagazine.net/wp-content/uploads/2020/02/ghostface.png"
+          alt="Profile Image"
+        />
+      </div>
+      <h2 class="elwood-profile-name">
+        {{valueDisplay.firstName}} {{valueDisplay.lastName}}
+      </h2>
+      <h3 class="elwood-profile-quote">
+        My only fear of death is coming back reincarnated.
+      </h3>
+    </header>
+
+    <section class="elwood-section" fxLayout="row">
+      <div fxFlex="90%">
+        <label for="" class="elwood-label">Address (Primary)</label>
+        {{valueDisplay.address.street}}, <br />{{valueDisplay.address.city}},
+        {{valueDisplay.address.state}} {{valueDisplay.address.zip}}
+      </div>
+      <div fxFlex="10%">
+        <mat-icon aria-hidden="false" aria-label="n">place</mat-icon>
+      </div>
+    </section>
+
+    <div *ngIf="valueDisplay" class="elwood-value-display">
+      {{valueDisplay | json}}
+    </div>
+  </div>
+</div>

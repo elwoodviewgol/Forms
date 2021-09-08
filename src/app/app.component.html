@@ -3,65 +3,95 @@
       padding: 15px 40px;
 -->
 <mat-tab-group animationDuration="0ms" class="elwood-tab-group">
-
   <mat-tab label="Name Editor" class="elwood-mat-tab">
     <ng-template matTabContent>
-
-      <h2 class="elwood-h2">Name Editor <small>Enter your name into the form field below</small></h2>
+      <h2 class="elwood-h2">
+        Name Editor <small>Enter your name into the form field below</small>
+      </h2>
 
       <app-name-editor></app-name-editor>
-      <footer class="elwood-footer">{{getTimeLoaded(1) | date:'medium'}}</footer>
-
+      <footer class="elwood-footer">
+        <strong>Name Editor</strong> - {{getTimeLoaded(1) | date:'medium'}}
+      </footer>
     </ng-template>
   </mat-tab>
 
   <mat-tab label="Profile Editor" class="elwood-mat-tab">
     <ng-template matTabContent>
-
-      <h2 class="elwood-h2">Profile Editor <small>Manage multiple form control instances in a single group</small></h2>
+      <h2 class="elwood-h2">
+        Profile Editor
+        <small>Manage multiple form control instances in a single group</small>
+      </h2>
       <app-profile-editor></app-profile-editor>
-      <footer class="elwood-footer">{{getTimeLoaded(2) | date:'medium'}}</footer>
-
+      <footer class="elwood-footer">
+        <strong>Profile Editor</strong> - {{getTimeLoaded(2) | date:'medium'}}
+      </footer>
     </ng-template>
   </mat-tab>
 
   <mat-tab label="Nested Profile Editor" class="elwood-mat-tab">
     <ng-template matTabContent>
-
       <h2 class="elwood-h2">
         Nested Profile Editor
         <small>Manage multiple form control instances in a single group</small>
       </h2>
       <app-nested-editor></app-nested-editor>
-      <footer class="elwood-footer">{{getTimeLoaded(3) | date:'medium'}}</footer>
-
+      <footer class="elwood-footer">
+        <strong>Nested Profile Editor</strong> - {{getTimeLoaded(3) |
+        date:'medium'}}
+      </footer>
     </ng-template>
   </mat-tab>
 
   <mat-tab label="Advanced Editor" class="elwood-mat-tab">
     <ng-template matTabContent>
-
       <h2 class="elwood-h2">
         Advanced Editor
         <small>Update Your Profile.</small>
       </h2>
       <app-advanced-form-editor></app-advanced-form-editor>
-      <footer class="elwood-footer">{{getTimeLoaded(3) | date:'medium'}}</footer>
-
+      <footer class="elwood-footer">
+        <strong>Advanced Editor</strong> - {{getTimeLoaded(4) | date:'medium'}}
+      </footer>
     </ng-template>
   </mat-tab>
 
   <mat-tab label="Form Builder" class="elwood-mat-tab">
     <ng-template matTabContent>
-
       <h2 class="elwood-h2">
         Form Builder
         <small>Using the FormBuilder service to generate controls.</small>
       </h2>
       <app-more-advanced-editor></app-more-advanced-editor>
-      <footer class="elwood-footer">{{getTimeLoaded(3) | date:'medium'}}</footer>
-
+      <footer class="elwood-footer">
+        <strong>Form Builder</strong> - {{getTimeLoaded(5) | date:'medium'}}
+      </footer>
     </ng-template>
   </mat-tab>
 
+  <mat-tab label="Validation" class="elwood-mat-tab">
+    <ng-template matTabContent>
+      <h2 class="elwood-h2">
+        Validation
+        <small>Ensure that user input is complete and correct.</small>
+      </h2>
+      <app-valid-form-editor></app-valid-form-editor>
+      <footer class="elwood-footer">
+        <strong>Validation</strong> - {{getTimeLoaded(6) | date:'medium'}}
+      </footer>
+    </ng-template>
+  </mat-tab>
+
+  <mat-tab label="Dynamic Array" class="elwood-mat-tab">
+    <ng-template matTabContent>
+      <h2 class="elwood-h2">
+        Dynamic Array
+        <small>Manage any number of unnamed controls.</small>
+      </h2>
+      <app-dynamic-editor></app-dynamic-editor>
+      <footer class="elwood-footer">
+        <strong>Dynamic Array</strong> - {{getTimeLoaded(7) | date:'medium'}}
+      </footer>
+    </ng-template>
+  </mat-tab>
 </mat-tab-group>

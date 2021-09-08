@@ -16,6 +16,8 @@ import { ProfileEditorComponent } from './components/profile-editor/profile-edit
 import { NestedEditorComponent } from './components/nested-editor/nested-editor.component';
 import { AdvancedFormEditorComponent } from './components/advanced-form-editor/advanced-form-editor.component';
 import { MoreAdvancedEditorComponent } from './components/more-advanced-editor/more-advanced-editor.component';
+import { ValidFormEditorComponent } from './components/valid-form-editor/valid-form-editor.component';
+import { DynamicEditorComponent } from './components/dynamic-editor/dynamic-editor.component';
 
 @NgModule({
   imports: [
@@ -34,7 +36,9 @@ import { MoreAdvancedEditorComponent } from './components/more-advanced-editor/m
     ProfileEditorComponent,
     NestedEditorComponent,
     AdvancedFormEditorComponent,
-    MoreAdvancedEditorComponent
+    MoreAdvancedEditorComponent,
+    ValidFormEditorComponent,
+    DynamicEditorComponent
   ],
   bootstrap: [AppComponent]
 })
