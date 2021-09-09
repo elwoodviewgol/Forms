@@ -94,4 +94,18 @@
       </footer>
     </ng-template>
   </mat-tab>
+
+  <mat-tab label="More Dynamic" class="elwood-mat-tab">
+    <ng-template matTabContent>
+      <h2 class="elwood-h2">
+        More Dynamic
+        <small>Convert this data into a form.</small>
+      </h2>
+      <app-more-dynamic-editor></app-more-dynamic-editor>
+      <footer class="elwood-footer">
+        <strong>More Dynamic</strong> - {{getTimeLoaded(8) | date:'medium'}}
+      </footer>
+    </ng-template>
+  </mat-tab>
+
 </mat-tab-group>

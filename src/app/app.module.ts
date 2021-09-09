@@ -18,6 +18,7 @@ import { AdvancedFormEditorComponent } from './components/advanced-form-editor/a
 import { MoreAdvancedEditorComponent } from './components/more-advanced-editor/more-advanced-editor.component';
 import { ValidFormEditorComponent } from './components/valid-form-editor/valid-form-editor.component';
 import { DynamicEditorComponent } from './components/dynamic-editor/dynamic-editor.component';
+import { MoreDynamicEditorComponent } from './components/more-dynamic-editor/more-dynamic-editor.component';
 
 @NgModule({
   imports: [
@@ -38,7 +39,8 @@ import { DynamicEditorComponent } from './components/dynamic-editor/dynamic-edit
     AdvancedFormEditorComponent,
     MoreAdvancedEditorComponent,
     ValidFormEditorComponent,
-    DynamicEditorComponent
+    DynamicEditorComponent,
+    MoreDynamicEditorComponent
   ],
   bootstrap: [AppComponent]
 })
