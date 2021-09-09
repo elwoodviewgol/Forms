@@ -22,6 +22,7 @@ A deep dive into Anuglar Forms.
 1. [Validating form input](https://angular.io/guide/form-validation)
   
 ### Blogs  
+1. [How to create forms dynamically in Angular 7 using FormControl](https://medium.com/@krishnaregmi/how-to-create-dynamic-forms-in-angular-7-using-formcontrol-a443a2c5e3a9)  
   
 #### RxJs  
 1. [Deep Dive into Reactive Programming with RxJS](https://www.infoq.com/articles/reactive-programming-rxjs/)  

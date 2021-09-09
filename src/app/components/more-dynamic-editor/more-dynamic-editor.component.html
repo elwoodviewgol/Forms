@@ -1,0 +1,38 @@
+<div fxLayout="row" fxLayoutGap="15px">
+  <div id="left-column-demo" fxFlex="70%">
+    <form [formGroup]="myFormGroup" (ngSubmit)="onSubmit()">
+
+      <div *ngFor="let form_elem of formTemplate">
+
+        <!-- ngSwitch -->
+        <div [ngSwitch]="form_elem.type">
+
+          <!-- case #1 -->
+          <div *ngSwitchCase="'textBox'">
+            <input type="text" formControlName="{{form_elem.label}}"/>
+          </div>
+
+          <!-- case #2 -->
+          <div *ngSwitchCase="'number'">
+            <input type="number" formControlName="{{form_elem.label}}"/>
+          </div>
+
+          <!-- case #3 -->
+          <div *ngSwitchCase="'select'">
+            <select formControlName="{{form_elem.label}}">
+              <option *ngFor="let opt of form_elem.options">
+                {{opt}}
+              </option>
+            </select>
+          </div>
+
+        </div>
+      </div>
+
+      <input type="submit" value="save"/>
+
+    </form>
+  </div>
+  <mat-divider [vertical]="true"></mat-divider>
+  <div fxFlex="30%" fxLayout="column" fxLayoutGap="15px"></div>
+</div>
